@@ -1,0 +1,271 @@
+body{
+    font-family: 'Rubik', sans-serif;
+}
+.header{
+    background-image:url('./assert/home-header.jpg');
+    position:relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+}
+.header::before{
+    position: absolute;
+    content: "";
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: white;
+}
+.content{
+    padding-top: 180px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.heading h1{
+    font-weight:700;
+    margin: 0 0 30px;
+    font-size: 65px;
+    line-height: 65px;
+}
+#textbox{
+    display: flex;
+    font-weight:lighter
+}
+#textbox input{
+    width: 255px;
+    height: 45px;
+    border-radius: 8px;
+    margin-right: 15px;
+    padding: 10px 12px;
+}
+#textbox .btn{
+    padding: 0px 30px;
+}
+#textbox .btn-primary{
+    background-color: #3fa2f7;
+}
+.line{
+    width: 50px;
+    height: 4px;
+    background: #3fa2f7;
+    border-radius: 20px;
+}
+.top{
+    position: fixed;
+    /* z-index: 999; */
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 8px 10px 10px 8px;
+    background-color: #06d6a0;
+    /* text-indent: -9999px; */
+    border-radius: 4px;
+    content: f1e0;
+    color: white;
+}
+.service{
+    padding: 50px 0px;
+    margin-bottom: 60px;
+    height: fit-content;
+    background-color: #f9f9f9;
+}
+.service .material-icons{
+    font-size: 30px;
+}
+.products{
+    margin: 60px 0px;
+    height: fit-content;
+}
+.products ul li{
+    list-style-type: none;
+    padding: 5px;
+    color: #707070;
+}
+.companies{
+    padding: 95px 0;
+    background-color: #f9f9f9;
+}
+.cheading{
+    margin-bottom: 78px;
+}
+.companies .cbutton{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.companies .btn-primary{
+    background-color: #3fa2f7;
+}
+.companies .msolar{
+    position: relative;
+    text-indent: -9999px;
+    width: 260px;
+    height: 60px;
+    background: url(./assert/momentum-solar-sprite.png) no-repeat -10px -10px;
+}
+.companies .vsolar{
+    position: relative;
+    text-indent: -9999px;
+    width: 260px;
+    height: 60px;
+    background: url(./assert/vivint-solar-sprite.png) no-repeat -10px -10px;
+}
+.companies .ssolar{
+    position: relative;
+    text-indent: -9999px;
+    width: 260px;
+    height: 60px;
+    background: url(./assert/sunnova-sprite.png) no-repeat -10px -10px;
+}
+.joinus{
+    min-height: 400px;
+    background: #031f32 url(./assert/join-us-footer.jpg) no-repeat left top;
+    background-size: cover;
+    color: white;
+}
+.joinus hr{
+    margin-top: 42px;
+    margin-bottom: 15px;
+}
+.joinus h3{
+    margin-bottom: 40px;
+}
+.joinus p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 73px;
+}
+.joinus input{
+    line-height: 48px;
+    border-radius: 2px;
+    border: none;
+    margin-right: 10px;
+    width: 390px;
+    padding: 0px 18px;
+}
+.joinus .btn{
+    padding: 0px 18px;
+    font-size: 18px;
+    letter-spacing: 0.38px;
+    border-radius: 2px;
+    min-width: 140px;
+}
+.joinus .btn-success{
+    background-color: #06d6a0;
+}
+.joinus .joinusinput{
+    display: flex;
+}
+.footer{
+    background-color: #05202a;
+    color: #9ca6aa;
+    padding: 60px 0px;
+
+}
+.footer ul li{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+.footer ul li a{
+    color: inherit;
+}
+.footer ul li a:hover{
+    cursor: pointer;
+    color: gray;
+    text-decoration: none;
+}
+.footer .col p{
+    text-align: right;
+    font-size: 1.1rem;
+    line-height: 1.75;
+    margin-bottom: 10px;
+}
+.footer .btn{
+    width: 41px;
+    height: 41px;
+    padding: 4px;
+}
+.footer .btn-secondary{
+    background-color: inherit;
+    border: 1px solid #9ca6aa8a;
+    color: inherit;
+    transition: width 0.25s ease-in-out;
+
+}
+.footer button:hover{
+    width: 63px;
+    color: white;
+}
+.footer #facebook:hover{
+    background-color:#3b5998;
+    border: 1px solid #3b5998;
+}
+.footer #twitter:hover{
+    background-color:#1DA1F2;
+    border: 1px solid #1DA1F2;
+}
+.footer #pin:hover{
+    background-color:#c8232c;
+    border: 1px solid #c8232c;
+}
+.footer #google:hover{
+    background-color:#DB4437;
+    border: 1px solid #DB4437;
+}
+@media (min-width: 300px) and (max-width: 425px){
+    .header{
+        background-image:url('./assert/home-header.jpg');
+        position:relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 700px;
+    }
+    .content{
+        padding-top: 80px;
+    }
+    .heading h1{
+        font-size: 50px;
+    }
+    #textbox{
+        display: block;
+    }
+    #textbox input{
+        margin-bottom: 20px;
+    }
+    .collapse{
+        z-index: 4;
+    }
+    .joinus input{
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    .joinus .joinusinput{
+        display: block;
+    }
+    ul {
+        padding-left: 0px;
+    }
+    #textbox .btn{
+        padding: 10px;
+    }
+    .joinus .btn {
+        padding:10px;
+        margin-bottom:20px;
+    }
+
+}
